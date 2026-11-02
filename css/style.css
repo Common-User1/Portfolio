@@ -202,3 +202,7 @@ a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 /* ---------- Secondary button ---------- */
 .button-ghost { background: transparent; color: var(--text); border: 1px solid var(--line); margin-left: var(--space-1); }
 .button-ghost:hover { background: transparent; color: var(--accent); border-color: var(--accent); }
+
+/* ---------- Empty state ---------- */
+.empty-state { border: 1px dashed var(--line); border-radius: var(--radius); padding: var(--space-3); color: var(--muted); }
+.empty-state p:last-child { margin-bottom: 0; }
