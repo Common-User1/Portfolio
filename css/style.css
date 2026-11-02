@@ -167,3 +167,13 @@ a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .case p { max-width: 36em; color: var(--muted); }
 .case-nav { margin-top: var(--space-5); padding-top: var(--space-3); border-top: 1px solid var(--line); }
 @media (max-width: 560px) { .meta { grid-template-columns: 1fr; } }
+
+/* ==========================================================
+   10. FACT LIST (education, skills, resume)
+   ========================================================== */
+.facts { margin: 0; }
+.facts div { display: grid; grid-template-columns: 9rem 1fr; gap: var(--space-2); padding-block: 0.9rem; border-top: 1px solid var(--line); }
+.facts div:last-child { border-bottom: 1px solid var(--line); }
+.facts dt { color: var(--muted); font-size: 0.9rem; }
+.facts dd { margin: 0; }
+@media (max-width: 560px) { .facts div { grid-template-columns: 1fr; gap: 0.15rem; } }
