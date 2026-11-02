@@ -177,3 +177,17 @@ a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 .facts dt { color: var(--muted); font-size: 0.9rem; }
 .facts dd { margin: 0; }
 @media (max-width: 560px) { .facts div { grid-template-columns: 1fr; gap: 0.15rem; } }
+
+/* ==========================================================
+   11. RESUME PAGE (screen and print)
+   ========================================================== */
+.resume h2 { font-size: 1.1rem; font-family: var(--font-body); font-weight: 600; color: var(--muted); margin: var(--space-4) 0 var(--space-1); }
+.resume-contact { color: var(--muted); }
+@media print {
+  .site-header, .site-footer, .no-print { display: none !important; }
+  body { background: #fff; color: #000; font-size: 11pt; }
+  .container { width: 100%; }
+  .page-intro { padding-top: 0; }
+  .resume-contact, .facts dt, .resume h2 { color: #444; }
+  a { color: #000; text-decoration: none; }
+}

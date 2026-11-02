@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume — Michael John J. Felices</title>
+  <meta name="description" content="Resume of Michael John J. Felices, Bachelor of Science in Computer Science student.">
+  <script>
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27><rect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23274690%27/><text x=%2716%27 y=%2722%27 font-size=%2714%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27600%27>MF</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">Michael John J. Felices</a>
+    <nav aria-label="Main">
+      <a href="index.html#projects">Projects</a>
+      <a href="index.html#about">About</a>
+      <a href="resume.html">Resume</a>
+      <a href="index.html#contact">Contact</a>
+      <button class="btn-quiet" id="theme-toggle" type="button">Dark</button>
+    </nav>
+  </header>
+  <main>
+    <article class="container resume">
+      <div class="page-intro">
+        <h1>Michael John J. Felices</h1>
+        <p class="resume-contact">[your-email@example.com] · [Phone] · [City, Country] · [github.com/username]</p>
+        <button class="btn-quiet no-print" id="print-btn" type="button">Print or save as PDF</button>
+      </div>
+      <h2>Objective</h2>
+      <p>[One or two sentences: the internship or role you want and what you can offer.]</p>
+      <h2>Education</h2>
+      <dl class="facts">
+        <div><dt>[Years]</dt><dd>Bachelor of Science in Computer Science, [University name]</dd></div>
+      </dl>
+      <h2>Projects</h2>
+      <dl class="facts">
+        <div><dt>Grade Checker</dt><dd>[One sentence on what it does, plus the technologies you used.]</dd></div>
+      </dl>
+      <h2>Skills</h2>
+      <dl class="facts">
+        <div><dt>Languages</dt><dd>[e.g. Python, Java, JavaScript]</dd></div>
+        <div><dt>Tools</dt><dd>[e.g. Git, GitHub, VS Code]</dd></div>
+      </dl>
+    </article>
+  </main>
+  <footer class="site-footer container"><p>© <span id="year"></span> Michael John J. Felices</p></footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -43,3 +43,7 @@ if ('IntersectionObserver' in window) {
 // Keep the footer year up to date automatically.
 const yearEl = document.getElementById('year');
 if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+// ---------- Print button (resume page) ----------
+const printBtn = document.getElementById('print-btn');
+if (printBtn) printBtn.addEventListener('click', () => window.print());
