@@ -10,6 +10,9 @@ Personal portfolio of a Bachelor of Science in Computer Science student. Built w
 - Project case study page (Grade Checker)
 - Education and skills section
 - Achievements section (layout ready for future certificates)
+- Profile photo in the hero section
+- Dedicated skills section with skill chips
+- Open Graph preview image for link sharing
 - Printable resume page and downloadable CV (PDF)
 - Contact form powered by Formspree, plus a copy-email button
 - Availability badge
@@ -23,7 +26,7 @@ index.html          home page
 grade-checker.html  case study
 resume.html         printable resume
 404.html            not-found page
-assets/             CV (PDF)
+assets/             CV (PDF), profile photo, project screenshot, link-preview image
 css/style.css       all styles (colors and fonts are variables at the top)
 js/main.js          dark mode, animations, copy email, contact form, print
 sitemap.xml         pages for search engines
