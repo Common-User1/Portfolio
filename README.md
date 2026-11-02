@@ -31,7 +31,7 @@ Search the HTML files for `[` and replace each bracket with real details. Change
 1. Push this repository to GitHub.
 2. Go to **Settings → Pages**.
 3. Under **Build and deployment**, choose **Deploy from a branch**, select `main` and `/ (root)`, then save.
-4. Your site appears at `https://<your-username>.github.io/<repository-name>/` after a minute.
+4. Your site appears at `https://common-user1.github.io/<repository-name>/` after a minute.
 
 ## Commit style
 Changes use short prefixes: `feat:` for features, `fix:` for bug fixes, `docs:` for documentation, `chore:` for housekeeping.
