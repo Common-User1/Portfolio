@@ -8,6 +8,10 @@
   <meta property="og:title" content="Michael John J. Felices — Computer Science Student">
   <meta property="og:description" content="Portfolio of a Bachelor of Science in Computer Science student.">
   <meta property="og:type" content="website">
+  <script>
+    /* Apply the saved theme before the page paints (avoids a flash) */
+    try { var t = localStorage.getItem('theme'); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+  </script>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27><rect width=%2732%27 height=%2732%27 rx=%276%27 fill=%27%23274690%27/><text x=%2716%27 y=%2722%27 font-size=%2714%27 text-anchor=%27middle%27 fill=%27white%27 font-family=%27sans-serif%27 font-weight=%27600%27>MF</text></svg>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,6 +26,7 @@
       <a href="#projects">Projects</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <button class="btn-quiet" id="theme-toggle" type="button">Dark</button>
     </nav>
   </header>
 
