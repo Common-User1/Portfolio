@@ -110,6 +110,18 @@
           <a class="email" id="email-link" href="mailto:jaynejanex@gmail.com">jaynejanex@gmail.com</a>
           <button class="btn-quiet" id="copy-email" type="button">Copy email</button>
         </div>
+        <form class="contact-form" id="contact-form" action="https://formspree.io/f/xnppoapl" method="POST">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+          <button class="button" type="submit">Send message</button>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+
         <p class="social"><a href="https://github.com/Common-User1" rel="me noopener">GitHub</a> <a href="resume.html">Resume</a></p>
       </div>
     </section>

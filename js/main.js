@@ -62,3 +62,30 @@ if (copyBtn) {
     setTimeout(() => { copyBtn.textContent = 'Copy email'; }, 2000);
   });
 }
+
+// ---------- Contact form ----------
+// Sends the form without leaving the page. Without JavaScript it still posts normally.
+const contactForm = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
+
+if (contactForm && formStatus) {
+  contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    formStatus.textContent = 'Sending...';
+    try {
+      const res = await fetch(contactForm.action, {
+        method: 'POST',
+        body: new FormData(contactForm),
+        headers: { Accept: 'application/json' }
+      });
+      if (res.ok) {
+        contactForm.reset();
+        formStatus.textContent = 'Thanks! Your message was sent.';
+      } else {
+        formStatus.textContent = 'Something went wrong. Please email me directly.';
+      }
+    } catch (err) {
+      formStatus.textContent = 'Network error. Please email me directly.';
+    }
+  });
+}

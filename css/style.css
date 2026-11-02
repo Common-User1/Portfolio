@@ -206,3 +206,14 @@ a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 /* ---------- Empty state ---------- */
 .empty-state { border: 1px dashed var(--line); border-radius: var(--radius); padding: var(--space-3); color: var(--muted); }
 .empty-state p:last-child { margin-bottom: 0; }
+
+/* ---------- Contact form ---------- */
+.contact-form { display: grid; gap: 0.4rem; margin-top: var(--space-3); max-width: 32rem; }
+.contact-form label { font-size: 0.9rem; color: var(--muted); }
+.contact-form input, .contact-form textarea {
+  font: inherit; color: var(--text); background: transparent;
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 0.6rem 0.8rem;
+}
+.contact-form input:focus, .contact-form textarea:focus { outline: 2px solid var(--accent); outline-offset: 1px; }
+.contact-form .button { justify-self: start; cursor: pointer; border: 0; }
+.form-status { color: var(--muted); font-size: 0.9rem; margin: 0; min-height: 1.5em; }
