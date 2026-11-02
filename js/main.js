@@ -47,3 +47,18 @@ if (yearEl) yearEl.textContent = new Date().getFullYear();
 // ---------- Print button (resume page) ----------
 const printBtn = document.getElementById('print-btn');
 if (printBtn) printBtn.addEventListener('click', () => window.print());
+
+// ---------- Copy email button ----------
+const copyBtn = document.getElementById('copy-email');
+if (copyBtn) {
+  copyBtn.addEventListener('click', async () => {
+    const email = document.getElementById('email-link').textContent;
+    try {
+      await navigator.clipboard.writeText(email);
+      copyBtn.textContent = 'Copied';
+    } catch (e) {
+      copyBtn.textContent = 'Press Ctrl+C on the email';
+    }
+    setTimeout(() => { copyBtn.textContent = 'Copy email'; }, 2000);
+  });
+}
