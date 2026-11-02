@@ -228,3 +228,6 @@ a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 /* ---------- Skill chips ---------- */
 .chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .chips li { border: 1px solid var(--line); border-radius: var(--radius); padding: 0.15rem 0.7rem; font-size: 0.9rem; color: var(--muted); }
+
+/* ---------- Profile photo ---------- */
+.avatar { display: block; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); margin-bottom: var(--space-3); }
