@@ -89,3 +89,23 @@ if (contactForm && formStatus) {
     }
   });
 }
+
+// ---------- Highlight the current section in the nav ----------
+// Only runs on the home page, where nav links point to sections (#projects, #about, ...).
+const navLinks = [...document.querySelectorAll('.site-header nav a[href^="#"]')];
+const pageSections = document.querySelectorAll('main > section');
+
+if ('IntersectionObserver' in window && navLinks.length) {
+  const linkFor = (section) => navLinks.find((a) => a.getAttribute('href') === '#' + section.id);
+
+  const navObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      navLinks.forEach((a) => a.removeAttribute('aria-current'));
+      const link = linkFor(entry.target);
+      if (link) link.setAttribute('aria-current', 'true');
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+
+  pageSections.forEach((section) => navObserver.observe(section));
+}

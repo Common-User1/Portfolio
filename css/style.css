@@ -231,3 +231,6 @@ a:hover { color: var(--accent); text-decoration-color: var(--accent); }
 
 /* ---------- Profile photo ---------- */
 .avatar { display: block; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; border: 1px solid var(--line); margin-bottom: var(--space-3); }
+
+/* ---------- Active nav link ---------- */
+.site-header nav a[aria-current="true"] { color: var(--text); text-decoration: underline; text-decoration-color: var(--accent); }
