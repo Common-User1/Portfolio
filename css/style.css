@@ -279,3 +279,18 @@ a:hover { color: var(--accent); text-decoration-color: var(--accent); }
   .site-header nav { flex-wrap: nowrap; gap: 0 1rem; }
   .site-header nav a, .logo { white-space: nowrap; }
 }
+
+/* ---------- Project cards ---------- */
+.work-item {
+  padding: var(--space-3); margin-bottom: var(--space-2);
+  border: 1px solid var(--line); border-radius: 8px;
+  transition: opacity .6s ease, transform .3s ease, border-color .2s, box-shadow .2s;
+}
+.work-item:last-child { border-bottom: 1px solid var(--line); }
+.work-item:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 6px 20px rgb(0 0 0 / 0.06); }
+.status {
+  display: inline-block; margin-left: 0.5rem; padding: 0.1rem 0.6rem; vertical-align: middle;
+  font: 500 0.75rem var(--font-body); color: var(--accent);
+  border: 1px solid var(--accent); border-radius: 999px;
+}
+@media (prefers-reduced-motion: reduce) { .work-item:hover { transform: none; } }
