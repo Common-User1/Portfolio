@@ -109,3 +109,18 @@ if ('IntersectionObserver' in window && navLinks.length) {
 
   pageSections.forEach((section) => navObserver.observe(section));
 }
+
+// ---------- Mobile menu ----------
+const menuToggle = document.getElementById('menu-toggle');
+const siteNav = document.getElementById('site-nav');
+
+if (menuToggle && siteNav) {
+  const setMenu = (open) => {
+    siteNav.classList.toggle('is-open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+    menuToggle.textContent = open ? 'Close' : 'Menu';
+  };
+  menuToggle.addEventListener('click', () => setMenu(!siteNav.classList.contains('is-open')));
+  siteNav.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+  document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setMenu(false); });
+}
